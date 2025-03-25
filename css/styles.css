@@ -1,0 +1,82 @@
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds the window height */
+}
+
+#details {
+  font-size: 20px;
+  text-align: center;
+  color: #0d0909;
+}
+
+/* nev */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #e0e0e0; /* Light grey for contrast against white */
+    z-index: 1000; /* Optional: Ensures that the header is above other content */
+    padding: 1px; /* Optional: Add padding for spacing */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Slightly darker shadow for contrast */
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex; 
+  justify-content: center;
+
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.left-item {
+  margin-right:auto;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  color: #0000ff; /* Change to any color you prefer */
+    transition: color 0.3s ease-in-out;
+}
+
+
+/* imag back main*/
+
+main {
+    background-image: url('../images/bk2.jpeg'); /* Path to your image */
+    background-size:cover;  /* Ensures the image covers the entire main content */
+    background-position: center; /* Centers the background */
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff7f7;
+    
+}
