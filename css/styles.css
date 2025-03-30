@@ -17,17 +17,27 @@
 }
 
 #details {
-  font-size: 20px;
-  text-align: center;
-  color: #0d0909;
-}
+  font-size: 40px;
+  text-align: left;
+  color: #000000;
+  margin-left: 20px;
+  max-width: 50%;
+  float: left;
+ }
 
+ #codeimg {
+  float:none;
+ }
+
+ main {
+  float: left;
+ }
 /* nev */
 
 header {
     position: sticky;
     top: 0;
-    background-color: #e0e0e0; /* Light grey for contrast against white */
+    background-color: #ffffff; /* Light grey for contrast against white */
     z-index: 1000; /* Optional: Ensures that the header is above other content */
     padding: 1px; /* Optional: Add padding for spacing */
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Slightly darker shadow for contrast */
@@ -40,19 +50,17 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #142433;
   display: flex; 
   justify-content: center;
 
 }
 
-li {
-  display: inline-block;
-}
+
 
 li a {
   display: inline-block;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -60,23 +68,46 @@ li a {
 
 .left-item {
   margin-right:auto;
+  margin-top: 10px;
+  color: #ffffff;
 }
 
 /* Change the link color on hover */
 li a:hover {
-  color: #0000ff; /* Change to any color you prefer */
+  color: #2563eb; /* Change to any color you prefer */
     transition: color 0.3s ease-in-out;
 }
 
 
-/* imag back main*/
+
 
 main {
-    background-image: url('../images/bk2.jpeg'); /* Path to your image */
-    background-size:cover;  /* Ensures the image covers the entire main content */
-    background-position: center; /* Centers the background */
-    padding: 50px 20px;
-    text-align: center;
-    color: #fff7f7;
-    
+  text-align: left;
+}
+
+.gif-container {
+  flex: 0.1; /* Adjust width as needed */
+  text-align: right; /* Aligns GIF to the right */
+}
+
+.gif-container img {
+  max-width: 100%; /* Ensures GIF fits within its container */
+
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.form {
+  padding: 10px;
+  float: left;
+  align-items: center;  /* Aligns items vertically */
+  justify-content: space-between; /* Pushes form and GIF to opposite sides */
+  max-width: 80%;
+  margin: 0 auto;
+  margin-left: 50px;
+  background-color: aqua;
+}
+
+form {
+  flex: 1;  /* Allows form to take up available space */
+  padding-right: 20px; /* Adds spacing between form and GIF */
 }

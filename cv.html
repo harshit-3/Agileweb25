@@ -4,18 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Coding Practices</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylescv.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Best Practie</a></li>
-                <li><a href="cv.html">CV</a></li>
+            <ul class="headerul">
+                <li class="left-item"> ASSIGNMENT 1, Harshit Gadhiya (23981757)</li>
+                <li class="center-item"><a href="index.html">Best Practice</a></li>
+                <li class="center-item"><a href="cv.html">CV</a></li>
               </ul> 
             </nav>
     </header>
+    
+    <section id="bio">
+        <img src="profile-placeholder.jpg" alt="Profile Picture" id="profile-pic">
+        <p>
+            I am a passionate software developer with expertise in web technologies, data analysis, and artificial intelligence.
+            With a background in computer science and hands-on experience in full-stack development, I enjoy solving complex problems
+            and building innovative solutions. Currently, I am deepening my knowledge in machine learning and cloud computing.
+        </p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Bootstrap</li>
+            <li>Python, Django</li>
+            <li>Machine Learning & AI</li>
+            <li>Database Management (SQL, MongoDB)</li>
+        </ul>
+    </section>
+    
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="job">
+            <h3>Software Developer - XYZ Corp</h3>
+            <p>Developed and maintained responsive web applications, optimized performance, and integrated APIs.</p>
+        </div>
+        <div class="job">
+            <h3>Data Analyst - ABC Ltd</h3>
+            <p>Conducted data analysis and visualization to drive business insights and decision-making.</p>
+        </div>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor's in Computer Science - University of XYZ</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: johndoe@example.com</p>
+        <p>Phone: (XXX) XXX-XXXX</p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/johndoe</a></p>
+    </section>
+    
+    <section id="dynamic-section">
+        <h2>Random Inspirational Quote</h2>
+        <p id="quote">Click the button for motivation!</p>
+        <button onclick="fetchQuote()">Get Quote</button>
+    </section>
+    
+    <section id="references">
+        <h2>References</h2>
+        <p>University of Western Australia. (n.d.). Referencing guide. Retrieved from <a href="https://guides.library.uwa.edu.au/referencinguwa" target="_blank">UWA Referencing Guide</a></p>
+    </section>
+    
+    <script>
+        function fetchQuote() {
+            fetch('https://api.quotable.io/random')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('quote').textContent = data.content;
+                })
+                .catch(error => console.error('Error fetching quote:', error));
+        }
+    </script>
 </body>
 </html>
