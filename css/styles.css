@@ -1,113 +1,154 @@
-
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    height: 100vh; /* Full height of the viewport */
-    overflow-y: auto; /* Enable vertical scrolling when content exceeds the window height */
-}
-
-#details {
-  font-size: 40px;
-  text-align: left;
-  color: #000000;
-  margin-left: 20px;
-  max-width: 50%;
-  float: left;
- }
-
- #codeimg {
-  float:none;
- }
-
- main {
-  float: left;
- }
-/* nev */
-
-header {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff; /* Light grey for contrast against white */
-    z-index: 1000; /* Optional: Ensures that the header is above other content */
-    padding: 1px; /* Optional: Add padding for spacing */
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Slightly darker shadow for contrast */
-}
-
-
-
-ul {
-  list-style-type: none;
+/* Reset some default browser styles */
+body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #142433;
-  display: flex; 
-  justify-content: center;
-
+  font-family: Arial, sans-serif;
 }
 
-
-
-li a {
-  display: inline-block;
-  color: rgb(255, 255, 255);
+/* Header Styling */
+header {
+  background-color: #122f49;
+  padding: 5px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
-.left-item {
-  margin-right:auto;
-  margin-top: 10px;
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+.headernav{
+  padding-left: 700px;
+}
+
+nav ul li a {
   color: #ffffff;
+ 
 }
-
-/* Change the link color on hover */
 li a:hover {
   color: #2563eb; /* Change to any color you prefer */
     transition: color 0.3s ease-in-out;
 }
 
+/* Intro Section */
 
+.intro {
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 90%;
+  margin: auto;
+}
 
-
-main {
+/* Ensure text stays on the left */
+.content {
+  flex: 1;
+  max-width: 50%;
   text-align: left;
+  text-align: justify;
 }
 
-.gif-container {
-  flex: 0.1; /* Adjust width as needed */
-  text-align: right; /* Aligns GIF to the right */
+p {
+  font-size: 25px;
 }
 
-.gif-container img {
-  max-width: 100%; /* Ensures GIF fits within its container */
-
-  border-radius: 10px; /* Optional: Adds rounded corners */
+/* Ensure image stays on the right */
+.image-container {
+  flex: 1;
+  max-width: 40%;
+  text-align: right;
 }
 
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#heading {
+  font-size: 40px;
+}
+
+
+/* Form Styling */
 .form {
-  padding: 10px;
-  float: left;
-  align-items: center;  /* Aligns items vertically */
-  justify-content: space-between; /* Pushes form and GIF to opposite sides */
-  max-width: 80%;
-  margin: 0 auto;
-  margin-left: 50px;
-  background-color: aqua;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-form {
-  flex: 1;  /* Allows form to take up available space */
-  padding-right: 20px; /* Adds spacing between form and GIF */
+.best-practice {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.best-practice:last-child {
+  border-bottom: none;
+}
+
+h1, h3, h2 {
+  color: #0073e6;
+}
+
+p {
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Save Button */
+.save-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.save-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #333;
+  text-align: center;
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

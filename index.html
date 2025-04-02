@@ -11,148 +11,181 @@
     <header>
         <nav>
             <ul>
-                <li class="left-item"> ASSIGNMENT 1, Harshit Gadhiya (23981757)</li>
-                <li class="center-item"><a href="index.html">Best Practice</a></li>
-                <li class="center-item"><a href="cv.html">CV</a></li>
-              </ul> 
-            </nav>
+                <li>ASSIGNMENT 1, Harshit Gadhiya (23981757)    </li>
+                <li class="headernav"><a href="index.html">Best Practice</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>  
+        </nav>
     </header>
-<span>
-<div>
-    <p id="details">
-        What are best coding Practices <br>
-        Does your page follow this practices?<br>
-        This page highlights best practices in HTML, CSS, and JavaScript.
-    </p>
-<div id="codeimg"><img src="./images/Coding-Standards-and-Best-Practices-to-Follow.webp" alt="coding img" width="400" height="300"></div>
-</div>    
-</span>
-<div class="form">
-    <h1>HTML Best Practices</h1>
-    <br>
-    <form action="#">
-        <div class="best-practice">
-            <h2>1. Always Declare a Doctype</h2>
-            <p class="practice-description">
-                The doctype declaration helps the browser understand which version of HTML is being used and ensures proper rendering of the webpage.
-            </p>
-            <div class="checkbox-container">
-                <input type="checkbox" id="doctype" name="doctype">
-                <label for="doctype">I have declared a doctype on my webpage.</label>
+
+    <main>
+        <section class="intro">
+            <div class="content">
+                <p id="heading">What are Best Coding Practices?</p>
+                <p>Best coding practices help developers write clean, efficient, and maintainable code.</p>
+                <p>Following these practices improves website performance, accessibility, and SEO while ensuring better collaboration in team projects.</p>
+                <p>Use this checklist to assess your website’s compliance with industry standards.</p>
+                <p>Let’s see how many best practices you already follow!</p>
             </div>
-        </div>
-
-        <div class="best-practice">
-            <h2>2. Use Meaningful Title Tags</h2>
-            <p class="practice-description">
-                The <code> &lt;title&gt;</code> tag improves your webpage's SEO and provides clarity for users and search engines on the page's content.
-            </p>
-            <div class="checkbox-container">
-                <input type="checkbox" id="title" name="title">
-                <label for="title">I have used a meaningful title tag on my webpage.</label>
+            <div class="image-container">
+                <img src="./images/Coding-Standards-and-Best-Practices-to-Follow.webp" 
+                     alt="Illustration of coding standards and best practices"
+                     width="600" height="400">
             </div>
-        </div>
+        </section>
 
-        <div class="best-practice">
-            <h2>3. Use Descriptive Meta Tags</h2>
-            <p class="practice-description">
-                Meta tags provide search engines with a summary of your page’s content, improving SEO and ensuring accurate indexing.
-            </p>
-            <div class="checkbox-container">
-                <input type="checkbox" id="meta" name="meta">
-                <label for="meta">I have added descriptive meta tags on my webpage.</label>
-            </div>
-        </div>
+        <section class="form">
+            <h1>HTML Best Practices</h1>
+            <h2> Select best practices you follow.</h2>
+            <form action="#">
+                <div class="best-practice">
+                    <h3>1. Always Declare a Doctype</h3>
+                    <p>The doctype declaration ensures the browser understands which version of HTML is used.</p>
+                    <label>
+                        <input type="checkbox" id="doctype" name="doctype">
+                        I have declared a doctype on my webpage.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>2. Use Meaningful Title Tags</h3>
+                    <p>The <code>&lt;title&gt;</code> tag improves SEO and provides clarity for users and search engines.</p>
+                    <label>
+                        <input type="checkbox" id="title" name="title">
+                        I have used a meaningful title tag on my webpage.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>3. Use Descriptive Meta Tags</h3>
+                    <p>Meta tags provide search engines with a summary of your page’s content, improving SEO and ensuring accurate indexing.</p>
+                    <label>
+                        <input type="checkbox" id="meta" name="meta">
+                        I have added descriptive meta tags on my webpage.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>4. Use Divs to Divide Your Layout into Major Sections</h3>
+                    <p>Dividing the layout into sections helps keep the HTML organized and easier to maintain as the project grows.</p>
+                    <label>
+                        <input type="checkbox" id="divs" name="divs">
+                        I have used divs to divide my webpage into sections.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>5. Separate Content from Presentation</h3>
+                    <p>Separating HTML (content) from CSS (presentation) improves code readability and maintainability.</p>
+                    <label>
+                        <input type="checkbox" id="separate" name="separate">
+                        I have separated content from presentation on my webpage.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>6. Minify and Unify CSS</h3>
+                    <p>Minifying and unifying CSS reduces file size, resulting in faster webpage load times.</p>
+                    <label>
+                        <input type="checkbox" id="minify-css" name="minify-css">
+                        I have minified and unified my CSS files.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>7. Minify, Unify and Move Down JavaScript</h3>
+                    <p>Minifying and placing JavaScript at the bottom of the page optimizes loading times and page responsiveness.</p>
+                    <label>
+                        <input type="checkbox" id="minify-js" name="minify-js">
+                        I have minified and moved my JavaScript files to the bottom of the page.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>8. Use Heading Elements Wisely</h3>
+                    <p>Using heading elements correctly improves content structure, accessibility, and SEO.</p>
+                    <label>
+                        <input type="checkbox" id="headings" name="headings">
+                        I have used heading elements correctly on my webpage.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>9. Use the Right HTML Element at the Right Place</h3>
+                    <p>Using semantic elements like &lt;em&gt;, &lt;strong&gt;, &lt;p&gt;, &lt;ul&gt;, etc., helps maintain meaningful and accessible content structure.</p>
+                    <label>
+                        <input type="checkbox" id="semantic" name="semantic">
+                        I have used the correct HTML elements for my content.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>10. Don’t Use Divs for Everything</h3>
+                    <p>Overusing &lt;div&gt; elements can lead to messy, unsemantic code. Use them only when no other element fits the purpose.</p>
+                    <label>
+                        <input type="checkbox" id="dont-div" name="dont-div">
+                        I avoid overusing divs in my webpage.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>11. Use Alt Attributes for Images</h3>
+                    <p>Alt attributes improve accessibility and provide context for images when they fail to load.</p>
+                    <label>
+                        <input type="checkbox" id="alt-attributes" name="alt-attributes">
+                        I have added alt attributes to all images on my webpage.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>12. Avoid Inline Styles</h3>
+                    <p>Using external or internal stylesheets instead of inline styles improves maintainability and consistency.</p>
+                    <label>
+                        <input type="checkbox" id="inline-styles" name="inline-styles">
+                        I avoid using inline styles on my webpage.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>13. Use Accessible Forms</h3>
+                    <p>Accessible forms include proper labels, fieldsets, and ARIA attributes to ensure usability for all users.</p>
+                    <label>
+                        <input type="checkbox" id="accessible-forms" name="accessible-forms">
+                        I have created accessible forms on my webpage.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>14. Use the Figure Element for Images</h3>
+                    <p>The &lt;figure&gt; element allows you to add captions to images, improving context and accessibility.</p>
+                    <label>
+                        <input type="checkbox" id="figure-element" name="figure-element">
+                        I have used the figure element for images on my webpage.
+                    </label>
+                </div>
+                
+                <div class="best-practice">
+                    <h3>15. Validate Your HTML</h3>
+                    <p>Validating your HTML ensures it adheres to standards and avoids rendering issues across browsers.</p>
+                    <label>
+                        <input type="checkbox" id="validate-html" name="validate-html">
+                        I have validated my HTML code.
+                    </label>
+                </div>
 
-        <div class="best-practice">
-            <h2>4. Use Divs to Divide Your Layout into Major Sections</h2>
-            <p class="practice-description">
-                Dividing the layout into sections helps keep the HTML organized and easier to maintain as the project grows.
-            </p>
-            <div class="checkbox-container">
-                <input type="checkbox" id="divs" name="divs">
-                <label for="divs">I have used divs to divide my webpage into sections.</label>
-            </div>
-        </div>
+                <button type="button" class="save-btn">Save Selection</button>
+            </form>
+        </section>
+    </main>
 
-        <div class="best-practice">
-            <h2>5. Separate Content from Presentation</h2>
-            <p class="practice-description">
-                Separating HTML (content) from CSS (presentation) improves code readability and maintainability.
-            </p>
-            <div class="checkbox-container">
-                <input type="checkbox" id="separate" name="separate">
-                <label for="separate">I have separated content from presentation on my webpage.</label>
-            </div>
-        </div>
-
-        <div class="best-practice">
-            <h2>6. Minify and Unify CSS</h2>
-            <p class="practice-description">
-                Minifying and unifying CSS reduces file size, resulting in faster webpage load times.
-            </p>
-            <div class="checkbox-container">
-                <input type="checkbox" id="minify-css" name="minify-css">
-                <label for="minify-css">I have minified and unified my CSS files.</label>
-            </div>
-        </div>
-
-        <div class="best-practice">
-            <h2>7. Minify, Unify and Move Down JavaScript</h2>
-            <p class="practice-description">
-                Minifying and placing JavaScript at the bottom of the page optimizes loading times and page responsiveness.
-            </p>
-            <div class="checkbox-container">
-                <input type="checkbox" id="minify-js" name="minify-js">
-                <label for="minify-js">I have minified and moved my JavaScript files to the bottom of the page.</label>
-            </div>
-        </div>
-
-        <div class="best-practice">
-            <h2>8. Use Heading Elements Wisely</h2>
-            <p class="practice-description">
-                Using heading elements correctly improves content structure, accessibility, and SEO.
-            </p>
-            <div class="checkbox-container">
-                <input type="checkbox" id="headings" name="headings">
-                <label for="headings">I have used heading elements correctly on my webpage.</label>
-            </div>
-        </div>
-
-        <div class="best-practice">
-            <h2>9. Use the Right HTML Element at the Right Place</h2> 
-            <p class="practice-description">
-                Using semantic elements like &lt;em&gt;, &lt;strong&gt;, &lt;p&gt;, &lt;ul&gt;, etc., helps maintain meaningful and accessible content structure.
-            </p>
-            <div class="checkbox-container">
-                <input type="checkbox" id="semantic" name="semantic">
-                <label for="semantic">I have used the correct HTML elements for my content.</label>
-            </div>
-        </div>
-
-        <div class="best-practice">
-            <h2>10. Don’t Use Divs for Everything</h2>
-            <p class="practice-description">
-                Overusing &lt;div&gt; elements can lead to messy, unsemantic code. Use them only when no other element fits the purpose.
-            </p>
-            <div class="checkbox-container">
-                <input type="checkbox" id="dont-div" name="dont-div">
-                <label for="dont-div">I avoid overusing divs in my webpage.</label>
-            </div>
-        </div>
-
-        <!-- Add more best practices similarly -->
-
-        <button type="submit">Submit</button>
-    </form>
-</div>
-
-<div class="gif-container">
-    <img src="./images/html.jpg" alt="Animated GIF", width="200px", height="500px">
-</div>
-
-    <footer><p>https://www.webfx.com/blog/web-design/20-html-best-practices-you-should-follow/
-        https://dog.ceo/api/breeds/image/random
-    </p></footer>
+    <footer>
+        <p>References:</p>
+        <ul>
+            <li><a href="https://www.webfx.com/blog/web-design/20-html-best-practices-you-should-follow/" target="_blank">
+                WebFX - HTML Best Practices</a></li>
+            <li><a href="https://dog.ceo/api/breeds/image/random" target="_blank">
+                Dog CEO API</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
