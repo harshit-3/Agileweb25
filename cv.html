@@ -3,85 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Coding Practices</title>
-    <link rel="stylesheet" href="css/stylescv.css">
-    <script src="js/script.js" defer></script>
+    <title>Harshit Gadhiya - CV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .section {
+            padding: 20px;
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .project-media img, .project-media video {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="headerul">
-                <li class="left-item"> ASSIGNMENT 1, Harshit Gadhiya (23981757)</li>
-                <li class="center-item"><a href="index.html">Best Practice</a></li>
-                <li class="center-item"><a href="cv.html">CV</a></li>
-              </ul> 
-            </nav>
-    </header>
-    
-    <section id="bio">
-        <img src="profile-placeholder.jpg" alt="Profile Picture" id="profile-pic">
-        <p>
-            I am a passionate software developer with expertise in web technologies, data analysis, and artificial intelligence.
-            With a background in computer science and hands-on experience in full-stack development, I enjoy solving complex problems
-            and building innovative solutions. Currently, I am deepening my knowledge in machine learning and cloud computing.
-        </p>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Bootstrap</li>
-            <li>Python, Django</li>
-            <li>Machine Learning & AI</li>
-            <li>Database Management (SQL, MongoDB)</li>
-        </ul>
-    </section>
-    
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="job">
-            <h3>Software Developer - XYZ Corp</h3>
-            <p>Developed and maintained responsive web applications, optimized performance, and integrated APIs.</p>
+    <div class="container mt-5">
+        <div class="text-center">
+            <img src="profile.jpg" alt="Harshit Gadhiya" class="profile-img">
+            <h1>Harshit Gadhiya</h1>
+            <p>Perth, WA, Australia</p>
         </div>
-        <div class="job">
-            <h3>Data Analyst - ABC Ltd</h3>
-            <p>Conducted data analysis and visualization to drive business insights and decision-making.</p>
+        
+        <div class="section fade-in">
+            <h2>About Me</h2>
+            <p>Master of Data Science student at the University of Western Australia with experience in machine learning, AI, and data engineering. Passionate about solving real-world problems using data-driven insights.</p>
         </div>
-    </section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor's in Computer Science - University of XYZ</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: johndoe@example.com</p>
-        <p>Phone: (XXX) XXX-XXXX</p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/johndoe</a></p>
-    </section>
-    
-    <section id="dynamic-section">
-        <h2>Random Inspirational Quote</h2>
-        <p id="quote">Click the button for motivation!</p>
-        <button onclick="fetchQuote()">Get Quote</button>
-    </section>
-    
-    <section id="references">
-        <h2>References</h2>
-        <p>University of Western Australia. (n.d.). Referencing guide. Retrieved from <a href="https://guides.library.uwa.edu.au/referencinguwa" target="_blank">UWA Referencing Guide</a></p>
-    </section>
-    
+
+        <div class="section fade-in">
+            <h2>Experience</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Capstone Project (July 2024 – Present)</h4>
+                <p>Led de-identification of medical data using k-anonymity, l-diversity, and t-closeness, and custom de-identification techniques to mitigate re-identification risks.</p>
+                <p>Conducted Unique Identification Analysis for high-risk quasi-identifiers.(e.g., date of birth, clinic location, clinic name) and applying tailored anonymization strategies.</p>
+                <p>Developed and optimized de-identification methods, including randomized birthdate generalization and clinic name pseudonymization, preserving data utility while ensuring compliance with GDPR, HIPAA, and APPs.</p>
+                <p>Balanced data privacy and usability, iteratively testing anonymization techniques to minimize data distortion while maintaining research value.</p>
+                <p>Ensured ethical and responsible AI practices, reducing bias in anonymized data and strengthening compliance with global privacy regulations.</p>
+	            <p>Proposed improvements for future anonymization techniques, exploring innovative methods for protecting unique identifiers while maintaining dataset integrity for research use.</p>
+
+            </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-container">
+                        <video width="100%" controls autoplay muted>
+                            <source src="./images/k-anon _demo.mp4" type="video/mp4" >
+                            Your browser does not support the video tag.
+                        </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="section fade-in">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="brain_tumor.jpg" class="img-fluid rounded" alt="Brain Tumor Detection">
+                </div>
+                <div class="col-md-6">
+                    <h4>Brain Tumor Detection (Jan 2024 – May 2024)</h4>
+                        <p>Analysed 369 patient brain MRI scans, integrating T1, T2, FLAIR, and other modalities for comprehensive tumor assessment.</p>
+                        <p>Developed an automated pipeline for seamless scan transitions and tumor segmentation, applying masks to visualize affected regions.</p>
+                        <p>Extracted radiomic features using PyRadiomics, capturing dynamic tumor characteristics for advanced analysis and prediction.</p>
+                        <p>Enhanced medical imaging analysis by leveraging multi-modal MRI data to improve tumor detection and characterization.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section fade-in">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming: Python, R, SQL, JavaScript, HTML, CSS</li>
+                <li>Machine Learning: TensorFlow, PyTorch, scikit-learn</li>
+                <li>Data Analysis: Tableau, Power BI, Pandas</li>
+                <li>Cloud & Tools: AWS, Docker, Git, Jupyter Notebooks</li>
+            </ul>
+        </div>
+
+        <div class="section fade-in">
+            <h2>Projects</h2>
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="credit_card.jpg" class="d-block w-100" alt="Credit Card Transaction Prediction">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Credit Card Transaction Prediction</h5>
+                            <p>Analyzed 2M+ transactions using clustering.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="airbnb.jpg" class="d-block w-100" alt="Airbnb Data Visualization">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Airbnb Data Visualization</h5>
+                            <p>Built interactive dashboards with Python.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="boston_real_estate.jpg" class="d-block w-100" alt="Boston Real Estate Analysis">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Boston Real Estate Analysis</h5>
+                            <p>Used predictive modeling for housing prices.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#projectCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="section fade-in">
+            <h2>Education</h2>
+            <ul>
+                <li>Master of Data Science, University of Western Australia</li>
+                <li>B.Tech in Computer Science, Parul Institute of Engineering & Technology</li>
+            </ul>
+        </div>
+    </div>
+
     <script>
-        function fetchQuote() {
-            fetch('https://api.quotable.io/random')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('quote').textContent = data.content;
-                })
-                .catch(error => console.error('Error fetching quote:', error));
-        }
+        $(document).ready(function () {
+            $(window).on("scroll", function () {
+                $(".fade-in").each(function () {
+                    var position = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll + windowHeight > position) {
+                        $(this).addClass("visible");
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
