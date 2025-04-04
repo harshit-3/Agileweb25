@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,55 +8,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        .section {
-            padding: 20px;
-            background: white;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .section:hover {
-            transform: scale(1.02);
-        }
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    <link rel="stylesheet" href="css/styles.css">
 
-        .project-media img, .project-media video {
-            width: 100%;
-            border-radius: 8px;
-        }
-    </style>
 </head>
+
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand">ASSIGNMENT 1, Harshit Gadhiya (23981757)</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Best Practice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div class="container mt-5">
         <div class="text-center">
-            <img src="profile.jpg" alt="Harshit Gadhiya" class="profile-img">
+            <img src="./images/me.jpg" alt="Harshit Gadhiya" class="profile-img">
             <h1>Harshit Gadhiya</h1>
             <p>Perth, WA, Australia</p>
+            <p>
+                <a href="mailto:harshitgadhiya333@gmail.com" class="contact-link">
+                    <img src="./images/gmail.ico" alt="Email" class="contact-icon"> harshitgadhiya333@gmail.com
+                </a> |
+                <a href="https://github.com/harshit-3" target="_blank" class="contact-link">
+                    <img src="./images/github.png" alt="GitHub" class="contact-icon"> GitHub
+                </a> |
+                <a href="https://www.linkedin.com/in/harshit-gadhiya-5921031a3/" target="_blank" class="contact-link">
+                    <img src="./images/linkedin.png" alt="LinkedIn" class="contact-icon"> LinkedIn
+                </a>
+            </p>
         </div>
-        
+    </div>
+
+
         <div class="section fade-in">
             <h2>About Me</h2>
-            <p>Master of Data Science student at the University of Western Australia with experience in machine learning, AI, and data engineering. Passionate about solving real-world problems using data-driven insights.</p>
+            <p class="aboutme">As a student pursuing a Master of Data Science at the University of Western Australia, I am passionate about using data to address challenging real-world problems. My passion is transforming unprocessed data into actionable insights that have
+                a significant impact, and I have a solid background in machine learning, artificial intelligence, and data engineering. Hands-on experience in creating innovative solutions for brain tumor detection and medical data anonymization has supplemented
+                my academic path, demonstrating my capacity to blend technological know-how with moral considerations. I'm dedicated to lifelong learning and am always experimenting with new technology and creative ways to broaden my skill set. I am inspired
+                by the potential of data to advance society and enhance lives, whether that be through algorithm optimization, the discovery of hidden patterns, or working with diverse teams. Beyond job and school, I appreciate innovative problem-solving
+                and make it a point to be on the cutting edge of data science developments, making sure that my contributions meet the highest standards of excellence and ethics.</p>
         </div>
 
         <div class="section fade-in">
@@ -63,107 +68,122 @@
             <div class="row">
                 <div class="col-md-6">
                     <h4>Capstone Project (July 2024 – Present)</h4>
-                <p>Led de-identification of medical data using k-anonymity, l-diversity, and t-closeness, and custom de-identification techniques to mitigate re-identification risks.</p>
-                <p>Conducted Unique Identification Analysis for high-risk quasi-identifiers.(e.g., date of birth, clinic location, clinic name) and applying tailored anonymization strategies.</p>
-                <p>Developed and optimized de-identification methods, including randomized birthdate generalization and clinic name pseudonymization, preserving data utility while ensuring compliance with GDPR, HIPAA, and APPs.</p>
-                <p>Balanced data privacy and usability, iteratively testing anonymization techniques to minimize data distortion while maintaining research value.</p>
-                <p>Ensured ethical and responsible AI practices, reducing bias in anonymized data and strengthening compliance with global privacy regulations.</p>
-	            <p>Proposed improvements for future anonymization techniques, exploring innovative methods for protecting unique identifiers while maintaining dataset integrity for research use.</p>
+                    <p>Led de-identification of medical data using k-anonymity, l-diversity, and t-closeness, and custom de-identification techniques to mitigate re-identification risks.</p>
+                    <p>Conducted Unique Identification Analysis for high-risk quasi-identifiers.(e.g., date of birth, clinic location, clinic name) and applying tailored anonymization strategies.</p>
+                    <p>Developed and optimized de-identification methods, including randomized birthdate generalization and clinic name pseudonymization, preserving data utility while ensuring compliance with GDPR, HIPAA, and APPs.</p>
+                    <p>Balanced data privacy and usability, iteratively testing anonymization techniques to minimize data distortion while maintaining research value.</p>
+                    <p>Ensured ethical and responsible AI practices, reducing bias in anonymized data and strengthening compliance with global privacy regulations.</p>
+                    <p>Proposed improvements for future anonymization techniques, exploring innovative methods for protecting unique identifiers while maintaining dataset integrity for research use.</p>
 
-            </ul>
                 </div>
                 <div class="col-md-6">
                     <div class="video-container">
-                        <video width="100%" controls autoplay muted>
-                            <source src="./images/k-anon _demo.mp4" type="video/mp4" >
-                            Your browser does not support the video tag.
+                        <video style="width: 100%;" controls autoplay muted loop>
+                            <source src="./images/k-anon_demo.mp4" type="video/mp4"> Your browser does not support the video tag.
                         </video>
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="section fade-in">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="brain_tumor.jpg" class="img-fluid rounded" alt="Brain Tumor Detection">
-                </div>
-                <div class="col-md-6">
-                    <h4>Brain Tumor Detection (Jan 2024 – May 2024)</h4>
+            <div class="section fade-in">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <video style="width: 100%;" controls autoplay muted loop>
+                                <source src="./images/Brain.mp4" type="video/mp4"> Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Brain Tumor Detection (Jan 2024 – May 2024)</h4>
                         <p>Analysed 369 patient brain MRI scans, integrating T1, T2, FLAIR, and other modalities for comprehensive tumor assessment.</p>
                         <p>Developed an automated pipeline for seamless scan transitions and tumor segmentation, applying masks to visualize affected regions.</p>
                         <p>Extracted radiomic features using PyRadiomics, capturing dynamic tumor characteristics for advanced analysis and prediction.</p>
                         <p>Enhanced medical imaging analysis by leveraging multi-modal MRI data to improve tumor detection and characterization.</p>
+                    </div>
                 </div>
             </div>
+
+            <div class="section fade-in">
+                <h2>Technical Skills</h2>
+                <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <ul>
+                                <li><strong>Programming:</strong> Python, R, SQL, JavaScript, HTML, CSS</li>
+                            </ul>
+                        </div>
+
+                        <div class="carousel-item">
+                            <ul>
+                                <li><strong>Machine Learning:</strong> TensorFlow, PyTorch, scikit-learn</li>
+                            </ul>
+                        </div>
+
+                        <div class="carousel-item">
+                            <ul>
+                                <li><strong>Data Analysis:</strong> Tableau, Power BI, Pandas</li>
+                            </ul>
+                        </div>
+
+                        <div class="carousel-item">
+                            <ul>
+                                <li><strong>Cloud & Tools:</strong> AWS, Docker, Git, Jupyter Notebooks</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+
+
+                </div>
+            </div>
+
+            <div class="section fade-in">
+                <h2>Education</h2>
+                <ul>
+                    <li>Master of Data Science, University of Western Australia</li>
+                    <li>B.Tech in Computer Science, Parul Institute of Engineering & Technology</li>
+                </ul>
+            </div>
         </div>
-        
         <div class="section fade-in">
-            <h2>Technical Skills</h2>
+            <h2>References</h2>
+            <p>Below are the sources used in the preparation of this assignment, including AI assistance.</p>
+
             <ul>
-                <li>Programming: Python, R, SQL, JavaScript, HTML, CSS</li>
-                <li>Machine Learning: TensorFlow, PyTorch, scikit-learn</li>
-                <li>Data Analysis: Tableau, Power BI, Pandas</li>
-                <li>Cloud & Tools: AWS, Docker, Git, Jupyter Notebooks</li>
+                <li>Bootstrap Documentation: <a href="https://getbootstrap.com/docs/5.3/" target="_blank">https://getbootstrap.com/docs/5.3/</a></li>
+                <li>jQuery Documentation: <a href="https://api.jquery.com/" target="_blank">https://api.jquery.com/</a></li>
+                <li>UWA Referencing Guide: <a href="https://guides.library.uwa.edu.au/referencinguwa" target="_blank">https://guides.library.uwa.edu.au/referencinguwa</a></li>
+                <li>AI Assistance: ChatGPT (OpenAI), used for guidance on best coding practices, HTML, CSS, JavaScript implementation, and Bootstrap enhancements.</li>
             </ul>
         </div>
 
-        <div class="section fade-in">
-            <h2>Projects</h2>
-            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="credit_card.jpg" class="d-block w-100" alt="Credit Card Transaction Prediction">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Credit Card Transaction Prediction</h5>
-                            <p>Analyzed 2M+ transactions using clustering.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="airbnb.jpg" class="d-block w-100" alt="Airbnb Data Visualization">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Airbnb Data Visualization</h5>
-                            <p>Built interactive dashboards with Python.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="boston_real_estate.jpg" class="d-block w-100" alt="Boston Real Estate Analysis">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Boston Real Estate Analysis</h5>
-                            <p>Used predictive modeling for housing prices.</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#projectCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
-        </div>
 
-        <div class="section fade-in">
-            <h2>Education</h2>
-            <ul>
-                <li>Master of Data Science, University of Western Australia</li>
-                <li>B.Tech in Computer Science, Parul Institute of Engineering & Technology</li>
-            </ul>
-        </div>
-    </div>
-
-    <script>
-        $(document).ready(function () {
-            $(window).on("scroll", function () {
-                $(".fade-in").each(function () {
-                    var position = $(this).offset().top;
-                    var scroll = $(window).scrollTop();
-                    var windowHeight = $(window).height();
-                    if (scroll + windowHeight > position) {
-                        $(this).addClass("visible");
-                    }
+        <script>
+            $(document).ready(function () {
+                $(window).on("scroll", function () {
+                    $(".fade-in").each(function () {
+                        var position = $(this).offset().top;
+                        var scroll = $(window).scrollTop();
+                        var windowHeight = $(window).height();
+                        if (scroll + windowHeight > position) {
+                            $(this).addClass("visible");
+                        }
+                    });
                 });
             });
-        });
-    </script>
-</body>
+        </script>
+
+    </body>
 </html>
